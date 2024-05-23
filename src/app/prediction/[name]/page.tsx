@@ -1,3 +1,7 @@
+export const dynamicParams = true;
+export async function generateStaticParams() {
+    return [];
+}
 const getPredictedAge = async (name:string) => {
   const res = await fetch(`https://api.agify.io/?name=${name}`);
   return res.json();
